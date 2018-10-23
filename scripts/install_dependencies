@@ -1,0 +1,2 @@
+pip3 install -U -r /app/requirements.txt
+pip3 install -U boto3

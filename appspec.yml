@@ -1,0 +1,16 @@
+
+version: 0.0
+os: linux
+files:
+  - source: /honkbot
+    destination: /app/
+hooks:
+  BeforeInstall:
+    - location: scripts/install_dependencies
+      timeout: 300
+      runas: root
+    - location: scripts/gather_env
+      timeout: 300
+      runas: root
+  ApplicationStart:
+    - location: scripts/start_bot

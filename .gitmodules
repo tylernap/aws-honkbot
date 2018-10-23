@@ -1,0 +1,3 @@
+[submodule "honkbot"]
+	path = honkbot
+	url = https://github.com/tylernap/honkbot.git
